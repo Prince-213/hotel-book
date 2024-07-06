@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        author: ["Author-Variable", "serif"],
+        manrope: ["Manrope-Variable", "sans-serif"],
+      },
+      colors: {
+        griy: "#5b6269",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
