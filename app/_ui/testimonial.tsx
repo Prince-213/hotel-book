@@ -4,14 +4,14 @@ import React from "react";
 
 const Testimonial = () => {
   return (
-    <div className=" w-full h-fit bg-gray-100 py-32">
-      <div className=" text-black space-y-10 mb-32 text-center">
+    <div className=" w-full h-fit bg-gray-100 py-20 lg:py-32">
+      <div className=" text-black space-y-10 mb-20 lg:mb-32 text-center">
         <p className=" text-center font-medium ">TESTIMONIALS</p>
-        <h1 className=" text-[2.6rem] lg:max-w-[60%] font-medium mx-auto text-center ">
+        <h1 className=" text-4xl w-[80%] leading-normal lg:text-[2.6rem] lg:max-w-[60%] font-medium mx-auto text-center ">
           Real stories and happy clients
         </h1>
       </div>
-      <div className=" w-[70%] mx-auto grid lg:grid-cols-3 gap-10">
+      <div className=" w-[90%] lg:w-[70%] mx-auto grid lg:grid-cols-3 gap-10">
         {[1, 2, 3, 4, 5, 6].map((item, index) => (
           <div
             key={index}

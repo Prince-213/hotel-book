@@ -3,16 +3,16 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div className=" w-full min-h-screen pb-20">
-      <div className=" text-black space-y-5 pt-[15vh] pb-12 text-center">
-        <h1 className=" text-[2.6rem] lg:max-w-[60%] font-medium mx-auto text-center ">
+    <div className=" w-full min-h-screen pt-[10vh] lg:pt-0 pb-20">
+      <div className=" text-black space-y-5 pt-14 lg:pt-[15vh] pb-12 text-center">
+        <h1 className=" text-3xl leading-normal lg:text-[2.6rem] lg:max-w-[60%] font-medium mx-auto text-center ">
           Pricing Plans
         </h1>
         <p className=" text-center font-medium ">
           Unique prices that will change your experience
         </p>
       </div>
-      <div className=" w-[70%] h-[70vh] grid grid-cols-3 gap-x-10 mx-auto">
+      <div className=" lg:w-[70%] w-[90%] lg:h-[70vh] grid grid-cols-1 lg:grid-cols-3 gap-y-10 lg:gap-x-10 mx-auto">
         <div className=" w-full h-full p-10 rounded-xl bg-gray-100 border-gray-200 border-2 space-y-5 ">
           <h3 className=" text-gray-600 text-xl">1 night</h3>
           <h1 className=" text-4xl">$1,450</h1>

@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const Page = () => {
   return (
-    <div className=" w-full min-h-screen grid grid-cols-2 mt-[10vh] pb-10">
+    <div className=" w-full min-h-screen grid grid-cols-1 lg:grid-cols-2 mt-[10vh] pb-10">
       <div className=" w-full h-full flex flex-col  justify-center">
-        <div className=" w-[50%] mx-auto">
+        <div className=" w-[90%] lg:w-[50%] mx-auto">
           <div className=" w-full mx-auto text-black space-y-5 mb-10 text-left">
             <h1 className=" text-[2.6rem] font-medium mx-auto  ">
               Sign in to your account
@@ -78,7 +78,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className=" w-full h-full pt-[10vh] rounded-lg bg-gray-200">
+      <div className=" w-full h-full pt-[10vh] rounded-lg bg-gray-200 hidden lg:block">
         <div className=" w-[75%] mx-auto h-full  rounded-tl-[50%] overflow-hidden rounded-tr-[50%] relative">
           <Image
             src={pic1}

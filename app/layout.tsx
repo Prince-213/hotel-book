@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={" relative font-manrope"}>
+      <body className={" w-full overflow-x-hidden relative font-manrope"}>
         <Header />
         {children}
         <Footer />

@@ -5,16 +5,16 @@ import Image from "next/image";
 
 const Experience = () => {
   return (
-    <div className=" w-full py-32">
+    <div className=" w-full py-16 lg:py-32">
       <div className=" text-black space-y-5 mb-32 text-center">
         <p className=" text-center font-medium ">EXPERIENCE</p>
-        <h1 className=" text-[2.6rem] lg:max-w-[60%] font-medium mx-auto text-center ">
+        <h1 className=" w-[90%] text-4xl leading-normal lg:text-[2.6rem] lg:max-w-[60%] font-medium mx-auto text-center ">
           Our solutions, your success
         </h1>
       </div>
 
-      <div className=" mt-20 w-[70%] mx-auto h-[70vh] grid lg:grid-cols-4 gap-10">
-        <div className=" w-full h-full bg-gray-100 row-span-2 col-span-2 rounded-xl relative overflow-hidden">
+      <div className=" mt-2 lg:mt-20 w-[90%] grid-cols-1 lg:w-[70%] mx-auto lg:h-[70vh] grid lg:grid-cols-4 gap-10">
+        <div className=" w-full h-[50vh]  lg:h-full bg-gray-100 lg:row-span-2 lg:col-span-2 rounded-xl relative overflow-hidden">
           <Image
             src={pic}
             alt=""
@@ -22,7 +22,7 @@ const Experience = () => {
             className=" object-center object-cover"
           />
         </div>
-        <div className=" h-full w-full bg-gray-100 rounded-xl p-10">
+        <div className=" h-fit lg:h-full w-full bg-gray-100 rounded-xl p-10">
           <div className=" flex flex-col items-center text-center justify-center w-full space-y-4 mx-auto">
             <h4 className=" text-lg uppercase text-griy font-medium">
               closer to downtown
@@ -35,7 +35,7 @@ const Experience = () => {
             </p>
           </div>
         </div>
-        <div className=" h-full w-full bg-gray-100 rounded-xl p-10">
+        <div className=" h-fit lg:h-full w-full bg-gray-100 rounded-xl p-10">
           <div className=" flex flex-col items-center text-center justify-center w-full space-y-4 mx-auto">
             <h4 className=" text-lg uppercase text-griy font-medium">
               more fun
@@ -49,7 +49,7 @@ const Experience = () => {
             </p>
           </div>
         </div>
-        <div className=" w-full h-full bg-gray-100 col-span-2 rounded-xl p-10">
+        <div className=" w-full h-fit lg:h-full bg-gray-100 lg:col-span-2 rounded-xl p-10">
           <div className=" flex flex-col items-center text-center justify-center w-full space-y-4 mx-auto">
             <h4 className=" text-lg uppercase text-griy font-medium">
               per night

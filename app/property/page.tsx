@@ -19,12 +19,12 @@ const Page = () => {
         <div className=" w-[80%] mx-auto">
           <div className=" text-black space-y-5 mb-20 text-center">
             <p className=" text-center font-medium ">INDOOR</p>
-            <h1 className=" text-[2.6rem] lg:max-w-[60%] font-medium mx-auto text-center ">
+            <h1 className=" text-4xl w-[90%] lg:text-[2.6rem] lg:max-w-[60%] font-medium mx-auto text-center ">
               Indoor - facilities and all equipments
             </h1>
           </div>
 
-          <div className="  grid grid-cols-3 w-[80%] translate-x-10  mx-auto gap-10  justify-between items-center ">
+          <div className="  grid lg:grid-cols-3 lg:w-[80%] w-[90%] grid-cols-1 lg:translate-x-10  mx-auto gap-10  justify-between items-center ">
             <div className=" flex items-center space-x-4">
               <div className=" w-24 h-24 bg-gray-300 rounded-3xl flex items-center justify-center">
                 <BedDouble size={32} />
