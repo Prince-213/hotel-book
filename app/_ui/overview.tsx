@@ -1,7 +1,6 @@
 import React from "react";
 
-import pic1 from "@/lib/assets/manuel-moreno-DGa0LQ0yDPc-unsplash.jpg";
-import pic2 from "@/lib/assets/li-yang-a8iCZvtrHpQ-unsplash.jpg";
+
 import Image from "next/image";
 
 const Overview = () => {
@@ -18,7 +17,9 @@ const Overview = () => {
           <div className=" w-full lg:h-[85vh] grid lg:grid-cols-2 grid-cols-1 lg:space-x-32">
             <div className=" w-full lg:h-full h-[50vh]  rounded-tl-[50%] overflow-hidden rounded-tr-[50%] relative">
               <Image
-                src={pic1}
+                src={
+                  "https://images.unsplash.com/photo-1506059612708-99d6c258160e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
                 alt=""
                 fill
                 className=" object-cover object-center"
@@ -43,7 +44,9 @@ const Overview = () => {
           <div className=" lg:hidden w-full lg:h-[85vh] grid lg:grid-cols-2 grid-cols-1 lg:space-x-32">
             <div className=" w-full lg:h-full h-[50vh]  rounded-tl-[50%] overflow-hidden rounded-tr-[50%] relative">
               <Image
-                src={pic1}
+                src={
+                  "https://images.unsplash.com/photo-1468824357306-a439d58ccb1c?q=80&w=1959&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
                 alt=""
                 fill
                 className=" object-cover object-center"
@@ -83,7 +86,9 @@ const Overview = () => {
             </div>
             <div className=" w-full h-full  rounded-tl-[50%] overflow-hidden rounded-tr-[50%] relative">
               <Image
-                src={pic1}
+                src={
+                  "https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
                 alt=""
                 fill
                 className=" object-cover object-center"

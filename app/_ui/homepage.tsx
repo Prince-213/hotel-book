@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "@/lib/assets/manuel-moreno-DGa0LQ0yDPc-unsplash.jpg";
+
 import BookButton from "@/app/_ui/book_button";
 import Image from "next/image";
 
@@ -19,7 +19,14 @@ const Homepage = () => {
         </div>
       </div>
       <div className=" hidden lg:block w-full h-full relative">
-        <Image src={pic} fill alt="" className=" object-cover object-center" />
+        <Image
+          src={
+            "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+          fill
+          alt=""
+          className=" object-cover object-center"
+        />
       </div>
     </main>
   );

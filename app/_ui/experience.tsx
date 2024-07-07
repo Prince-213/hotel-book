@@ -1,6 +1,6 @@
 import React from "react";
 
-import pic from "@/lib/assets/mp-fV2dM2WvKvE-unsplash.jpg";
+
 import Image from "next/image";
 
 const Experience = () => {
@@ -16,7 +16,9 @@ const Experience = () => {
       <div className=" mt-2 lg:mt-20 w-[90%] grid-cols-1 lg:w-[70%] mx-auto lg:h-[70vh] grid lg:grid-cols-4 gap-10">
         <div className=" w-full h-[50vh]  lg:h-full bg-gray-100 lg:row-span-2 lg:col-span-2 rounded-xl relative overflow-hidden">
           <Image
-            src={pic}
+            src={
+              "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
             alt=""
             fill
             className=" object-center object-cover"

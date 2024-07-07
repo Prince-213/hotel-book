@@ -1,7 +1,7 @@
 import React from "react";
 import BookButton from "../_ui/book_button";
 import Image from "next/image";
-import pic from "@/lib/assets/mp-fV2dM2WvKvE-unsplash.jpg";
+
 import Testimonial from "../_ui/testimonial";
 import Experience from "../_ui/experience";
 import { LocateIcon, Mail, Phone } from "lucide-react";
@@ -141,7 +141,9 @@ const Page = () => {
         </div>
         <div className=" hidden lg:block w-full h-full relative">
           <Image
-            src={pic}
+            src={
+              "https://images.unsplash.com/photo-1506059612708-99d6c258160e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
             fill
             alt=""
             className=" object-cover object-center -z-10"
