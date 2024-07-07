@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import pic1 from "@/lib/assets/li-yang-a8iCZvtrHpQ-unsplash.jpg";
+
 import Image from "next/image";
 import { login } from "../_actions/actions";
 import LogInButton from "./_ui/button";
@@ -78,7 +78,9 @@ const Page = () => {
       <div className=" w-full h-full pt-[10vh] rounded-lg bg-gray-200 hidden lg:block">
         <div className=" w-[75%] mx-auto h-full  rounded-tl-[50%] overflow-hidden rounded-tr-[50%] relative">
           <Image
-            src={pic1}
+            src={
+              "https://images.unsplash.com/photo-1506059612708-99d6c258160e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
             alt=""
             fill
             className=" object-cover object-center"
