@@ -35,7 +35,7 @@ const Page = () => {
                   <p className=" text-xl ">Email</p>
                 </div>
                 <p className=" text-[#5b6269] text-[1rem] text-center">
-                  mail@gmail.com.
+                  robinssojan26@gmail.com.
                 </p>
               </div>
 
@@ -45,7 +45,7 @@ const Page = () => {
                   <p className=" text-xl ">Phone Support</p>
                 </div>
                 <p className=" text-[#5b6269] text-[1rem] text-center">
-                  Dublin Ireland.
+                  +353 894784242
                 </p>
               </div>
             </div>

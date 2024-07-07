@@ -2,6 +2,8 @@ import Link from "next/link";
 import React from "react";
 import pic1 from "@/lib/assets/li-yang-a8iCZvtrHpQ-unsplash.jpg";
 import Image from "next/image";
+import { login } from "../_actions/actions";
+import LogInButton from "./_ui/button";
 
 const Page = () => {
   return (
@@ -17,7 +19,7 @@ const Page = () => {
             </p>
           </div>
           <div className="mt-10 s">
-            <form action="#" method="POST" className="space-y-6">
+            <form action={login} className="space-y-6">
               <div>
                 <label
                   htmlFor="email"
@@ -57,12 +59,7 @@ const Page = () => {
               </div>
 
               <div>
-                <button
-                  type="submit"
-                  className="flex w-full justify-center rounded-full bg-black text-white text-lg font-medium py-5"
-                >
-                  Submit
-                </button>
+                <LogInButton />
               </div>
             </form>
 

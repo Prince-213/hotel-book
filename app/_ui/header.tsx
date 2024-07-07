@@ -2,12 +2,14 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Menu, User } from "lucide-react";
+import { Menu, UserIcon } from "lucide-react";
 import BookButton from "../_ui/book_button";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import { AnimatePresence, motion } from "framer-motion";
+import { User } from "@supabase/supabase-js";
+import SignOut from "@/lib/components/signout";
 
-const Header = () => {
+const Header = ({ user }: { user: User | undefined }) => {
   const [modal, setModal] = useState(false);
 
   return (
@@ -28,20 +30,24 @@ const Header = () => {
           </ul>
         </nav>
         <div className=" lg:flex items-center space-x-5 hidden">
-          <Popover className="relative z-50">
-            <PopoverButton className=" border-none">
-              <div className=" w-14 h-14 rounded-[50%] bg-gray-200 flex items-center justify-center">
-                <User />
-              </div>
-            </PopoverButton>
-            <PopoverPanel
-              anchor="bottom"
-              className="flex flex-col font-medium space-y-3 bg-white border-2 shadow-lg rounded-xl p-5 z-[9999]"
-            >
-              <Link href="/signup">Sign Up</Link>
-              <Link href="/signin">Sign In</Link>
-            </PopoverPanel>
-          </Popover>
+          {user ? (
+            <SignOut />
+          ) : (
+            <Popover className="relative z-50">
+              <PopoverButton className=" border-none">
+                <div className=" w-14 h-14 rounded-[50%] bg-gray-200 flex items-center justify-center">
+                  <UserIcon />
+                </div>
+              </PopoverButton>
+              <PopoverPanel
+                anchor="bottom"
+                className="flex flex-col font-medium space-y-3 bg-white border-2 shadow-lg rounded-xl p-5 z-[9999]"
+              >
+                <Link href="/signup">Sign Up</Link>
+                <Link href="/signin">Sign In</Link>
+              </PopoverPanel>
+            </Popover>
+          )}
           <BookButton />
         </div>
         <div className=" lg:hidden">
